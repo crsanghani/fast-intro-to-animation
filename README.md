@@ -18,6 +18,6 @@ Open `index.html` in a web browser.
 
 ## Ideas for animations to make
 
-* What about rectangle that flashes random colours?
+* What about a rectangle that flashes random colours?
 
 * What about a rectangle that moves around, bouncing off the edges of the screen?
