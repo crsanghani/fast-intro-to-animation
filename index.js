@@ -27,4 +27,4 @@ function tick() {
   requestAnimationFrame(tick);
 };
 
-requestAnimationFrame(tick);
+tick();
