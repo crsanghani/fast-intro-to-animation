@@ -12,16 +12,12 @@ Open `index.html` in a web browser.
 
 ## Basic elements of an animation
 
-* Drawing.
+* Drawing an image (to a canvas element).
 
-* Moving a drawing.
-
-* (Optional) input from the user.
+* Changing the image.
 
 ## Ideas for animations to make
 
 * What about rectangle that flashes random colours?
-
-* What about a person you can move around with the arrow keys?
 
 * What about a rectangle that moves around, bouncing off the edges of the screen?

@@ -1,16 +1,13 @@
-function World(screen, key) {
+function World(screen) {
   this.screen = screen;
-  this.key = key;
 
   this.square = { x: 10, y: 10, width: 10, height: 10 };
 };
 
 World.prototype = {
   update: function() {
-    if (this.key.isPressed()) {
-      this.square.width += 1;
-      this.square.height += 1;
-    }
+    this.square.width += 1;
+    this.square.height += 1;
   },
 
   draw: function() {
@@ -21,24 +18,8 @@ World.prototype = {
   }
 };
 
-function Key(window) {
-  var pressed = false;
-
-  window.addEventListener("keydown", function() {
-    pressed = true;
-  });
-
-  window.addEventListener("keyup", function() {
-    pressed = false;
-  });
-
-  this.isPressed = function() {
-    return pressed;
-  };
-};
-
 var screen = document.getElementById("screen").getContext("2d");
-var world = new World(screen, new Key(window));
+var world = new World(screen);
 
 function tick() {
   world.update();
